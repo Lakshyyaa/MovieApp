@@ -7,7 +7,7 @@ function SearchMovies() {
     const search = async (event) => {
         event.preventDefault()
 
-        const url = 'https://api.themoviedb.org/3/search/movie?api_key='+process.env.REACT_APP_APIKEY+'&query=' + query + '&language=en-US';
+        const url = 'https://api.themoviedb.org/3/search/movie?api_key=48b8ab169d324d7844f85ad05773775a&query=' + query + '&language=en-US';
         try {
             const res = await fetch(url);
             const data = await res.json();
